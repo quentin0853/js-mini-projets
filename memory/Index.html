@@ -6,6 +6,11 @@
     <title>Memory cards Game</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
     <header>
@@ -62,74 +67,71 @@
 
         <div class="memory-game d-flex flex-wrap mx-auto">
         <!-- Nbre de div lié au nombre de cartes(multiple de 2)-->
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Pikachu.jpg">
-            </div>
-
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Pikachu.jpg">
-            </div>
+                <div id="Pikachu-Card1" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Pikachu.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
             
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Salameche.jpg">
-            </div>
+                <div id="Pikachu-Card2" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Pikachu.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
+               
+                <div id="Salameche-Card1" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Salameche.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
+     
+                <div id="Salameche-Card2" class="memory-card col-3 align-items-center text-center mx-auto">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Salameche.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
 
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Salameche.jpg">
-            </div>
+                <div id="Carapuce-Card1" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Carapuce.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
 
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Carapuce.jpg">
-            </div>
+                <div id="Carapuce-Card2" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Carapuce.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
 
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Carapuce.jpg">
-            </div>
+                <div id="Pikachu-Card1" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Pikachu.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
 
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Pikachu.jpg">
-            </div>
+                <div id="Pikachu-Card2" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Pikachu.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
+                
+                <div id="Salameche-Card1" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Salameche.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
 
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Pikachu.jpg">
-            </div>
-            
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Salameche.jpg">
-            </div>
+                <div id="Salameche-Card2" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Salameche.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
 
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Salameche.jpg">
-            </div>
+                <div id="Carapuce-Card1" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Carapuce.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
 
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Carapuce.jpg">
-            </div>
-
-            <div class="memory-card col-3 align-items-center text-center">
-                <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
-                <img class="front-card img-thumbnail" src="img/Pokemon/Carapuce.jpg">
-            </div>
+                <div id="Carapuce-Card2" class="memory-card col-3 align-items-center text-center">
+                    <img class="front-card img-thumbnail" src="img/Pokemon/Carapuce.jpg">
+                    <img class="back-card img-thumbnail" src="img/Pokemon/cardback.jpg">
+                </div>
         </div>
     </div>
 
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
 </body>
 </html>
